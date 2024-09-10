@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -19,7 +20,7 @@ body, html {
 }
 
 .megari {
-    font-size: 5rem;
+    font-size: 12vw;
     font-weight: bold;
     background: linear-gradient(90deg, #ff7eb9, #ff65a3, #7afcff, #feff9c, #fff740);
     background-size: 300%;
@@ -28,20 +29,27 @@ body, html {
     animation: gradientAnimation 6s ease infinite;
 }
 
+
 @keyframes gradientAnimation {
     0% { background-position: 0%; }
     50% { background-position: 100%; }
     100% { background-position: 0%; }
 }
 
+
 .cta-text {
-    font-size: 1.5rem;
+    font-family: 'Poppins', sans-serif; 
+    font-size: 1.8rem;
+    font-weight: 500;
     margin-top: 20px;
     opacity: 0;
-    animation: fadeInOut 6s ease infinite;
+    transition: opacity 2s ease;
 }
 
-@keyframes fadeInOut {
-    0%, 100% { opacity: 0; }
-    50% { opacity: 1; }
+.fade-in {
+    opacity: 1;
+}
+
+.fade-out {
+    opacity: 0;
 }
